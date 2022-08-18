@@ -9,7 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--context=git://github.com/ritttest/kaniko-demo",
-            "--destination=ritttest/test-container",
+            "--destination=pritten/test-container",
             "--force"]
     volumeMounts:
       - name: kaniko-secret
