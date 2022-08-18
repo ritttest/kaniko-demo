@@ -10,6 +10,7 @@ spec:
     image: gcr.io/kaniko-project/executor:v1.6.0
     args: ["--context=git://github.com/ritttest/kaniko-demo",
             "--destination=pritten/test-container2:1.1.0",
+            "--insecure",
             "--force"]
     volumeMounts:
       - name: kaniko-secret
