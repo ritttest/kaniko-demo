@@ -9,9 +9,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug-0fe0a64113fb9755f6896a805f67dbfdb02acf0d
     args: ["--context=git://github.com/ritttest/kaniko-demo",
-            "--destination=pritten/test-container2:1.1.0",
-            "--insecure",
-            "--force"]
+            "--destination=pritten/test-container2:1.1.0"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker
